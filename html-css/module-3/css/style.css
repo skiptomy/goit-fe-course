@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', sans-serif;
+    color: #626262;
+    font-weight: normal;
+    text-align: center;
+}
+
+body {
+    width: 1200px;
+    height: 2080px;
+}
+
+header {
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+.nav_bar {
+    display: inline-block;
+}
+
+.nav_bar ul {
+    width: 600px;
+    text-align-last: justify;
+    padding-left: 25px;
+}
+
+.nav_bar ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav_bar ul li:hover {
+    color: #25b4f5;
+}
+
+.card {
+    display: inline-block;
+    width: 420px;
+}
+
+.category, .article_title, .description {
+    text-align: left;
+}
+
+.card_cover {
+    margin-bottom: 25px;
+}
+
+.category {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    margin-bottom: 27px;
+    color: #b4ad9e;
+}
+
+.description {
+    font-style: 14px;
+}
+
+.article_title {
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.list_article {
+    display: inline-block;
+    width: 965px;
+}
+
+.article_1, .article_2, .article_3, .article_4 {
+    display: inline-block;
+    margin: 0 30px 130px 30px;
+}
+
+.article_5, .article_6 {
+    display: inline-block;
+    margin: 0 30px 55px 30px;
+}
+
+#btn_more {
+    width: 164px;
+    height: 60px;
+    background-color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid;
+    margin-bottom: 70px;
+
+}
