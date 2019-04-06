@@ -89,6 +89,7 @@ header {
 }
 
 #btn_more {
+    margin-right: 15px;
     width: 164px;
     height: 60px;
     background-color: #fff;
