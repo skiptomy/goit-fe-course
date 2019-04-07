@@ -9,11 +9,12 @@
     color: #626262;
     font-weight: normal;
     text-align: center;
+    line-height: 1.86;
 }
 
-body {
-    width: 1200px;
-    height: 2080px;
+.container {
+    width: 900px;
+    margin: 0 auto;
 }
 
 header {
@@ -21,31 +22,27 @@ header {
     padding-top: 70px;
 }
 
-.nav_bar {
-    display: inline-block;
+.category_list {
+    font-size: 0;
 }
 
-.nav_bar ul {
-    width: 600px;
-    text-align-last: justify;
-    padding-left: 25px;
+.category_item {
+    display: inline-block;
+    margin-right: 80px;
 }
 
-.nav_bar ul li {
-    display: inline-block;
+.category_item:last-child {
+    margin-right: 0;    
+}
+.category_title {
+    display: block;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    cursor: pointer;
-    text-align: center;
 }
 
-.nav_bar ul li:hover {
+.category_title:hover {
     color: #25b4f5;
-}
-
-.card {
-    display: inline-block;
-    width: 420px;
 }
 
 .category, .article_title, .description {
@@ -62,40 +59,50 @@ header {
     font-size: 14px;
     margin-bottom: 27px;
     color: #b4ad9e;
+    line-height: 1.2;
 }
 
 .description {
-    font-style: 14px;
+    font-size: 14px;
 }
 
 .article_title {
     margin-bottom: 35px;
     font-size: 30px;
+    line-height: 1.2;
 }
 
-.list_article {
+.article_list {
     display: inline-block;
-    width: 965px;
+    font-size: 0;
+    padding-bottom: 70px;
 }
 
-.article_1, .article_2, .article_3, .article_4 {
+.article_content {
     display: inline-block;
-    margin: 0 30px 130px 30px;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 130px;
 }
 
-.article_5, .article_6 {
-    display: inline-block;
-    margin: 0 30px 55px 30px;
+.article_content:nth-child(2n) {
+    margin-right: 0;
+}
+
+.article_content:nth-last-of-type(-n+2) {
+    margin-bottom: 55px;
 }
 
 #btn_more {
-    margin-right: 15px;
     width: 164px;
     height: 60px;
     background-color: #fff;
     font-size: 20px;
     display: inline-block;
     border: 1px solid;
-    margin-bottom: 70px;
+    cursor: pointer;
+}
 
+#btn_more:hover {
+    background-color: #c2c0c0;
 }
