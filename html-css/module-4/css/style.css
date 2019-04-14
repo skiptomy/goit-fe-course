@@ -10,12 +10,12 @@
 
 .container {
     width: 1110px;
-    font-size: 0;
     margin: 0 auto;
     text-align: center;
 }
 
 .logo {
+    text-decoration: none;
     padding-top: 30px;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -38,16 +38,20 @@
 .item_menu {
     float: left;
     list-style-type: none;
+    margin-right: 30px;
 }
 
-.item_menu a{
-    /* display: inline-block; */
+.item_menu:last-child {
+    margin-right: 0px;
+}
+
+.item_menu a {
+    display: block;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 35px;
     color: #000000;
 }
 
@@ -55,16 +59,19 @@
     color: #1abc9c;
 }
 
-main {
+.section_site {
+    padding-top: 100px;
+}
+
+.section_site:last-child {
     padding-bottom: 80px;
 }
 
 .section_title {
     margin-bottom: 92px;
-    margin-top: 100px;
 }
 
-.section_title h2 {
+.section_title {
     font-size: 48px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -91,8 +98,12 @@ main {
     cursor: pointer;
 }
 
-.card:nth-child(4n) {
+.card:nth-last-child(4n + 1) {
     margin-right: 0;
+}
+
+.card:nth-of-type(n+5) {
+    margin-bottom: 0;
 }
 
 .img_wrp {
@@ -143,6 +154,7 @@ main {
     margin-right: 30px;
     text-align: left;
     letter-spacing: -0,28px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .article_card:last-of-type {
@@ -157,8 +169,8 @@ main {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
     color: #555252;
+    margin-bottom: 25px;
 }
 
 .article_title::after {
@@ -174,26 +186,22 @@ main {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
     color: #6c6969;
     margin-bottom: 15px;
-    margin-top: 25px;
 }
 
 .btn {
+    display:block;
     width: 160px;
-    height: 50px;
+    text-decoration: none;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 50px;
     color: #ffffff;
     background-color: #4ec6ab;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    border-radius: 3px;
-    border: none;
+    text-align: center;
 }
 
 .btn:hover {
     background-color: #6c6969;
-    cursor: pointer;
 }
