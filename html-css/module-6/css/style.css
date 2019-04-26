@@ -42,7 +42,7 @@
 .site_navigation {
     display: flex;
     justify-content: space-between;
-    width: 490px;
+    min-width: 490px;
     list-style: none;
 }
 
