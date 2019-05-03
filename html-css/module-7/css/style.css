@@ -179,7 +179,7 @@ html {
 
 .contacts_textarea {
     height: 210px;
-    padding-top: 15px;
+    padding: 20px;
 }
 
 input[type="email"]:focus:invalid,
