@@ -1,0 +1,216 @@
+
+html {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.page_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 65px;
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'Permanent Marker', sans-serif;
+    text-decoration: none;
+    color: #fed136;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+/* site navigation */
+
+.site_navigation {
+    display: flex;
+    justify-content: space-between;
+    min-width: 485px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site_navigation a {
+    display: block;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.site_navigation a:hover,
+.site_navigation a:focus {
+    color: #fed136;
+}
+
+.section_title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.forms .section_title {
+    color: #ffffff; 
+}
+
+.section_subtitle {
+    font-family: 'Overclock', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #777777;
+    margin-bottom: 60px;
+}
+
+/* services section */
+
+.services {
+    margin-top: 120px;
+} 
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services_list_item {
+    flex: 0 0 290px;
+    margin-bottom: 102px;
+}
+
+.services_list_item::before {
+    content: "";
+    display: block;
+    height: 74px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_ecommerce::before {
+    background-image: url('../img/Icon-Basket.png');
+}
+
+.icon_responsive::before {
+    background-image: url('../img/Icon-Laptop.png');
+}
+
+.icon_security::before {
+    background-image: url('../img/Icon-Locked.png');
+}
+
+.services_list_item h3 {
+    font-size: 18px;
+}
+
+.services_list_item p {
+    color: #777777;
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* forms section */
+
+.forms {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 115px;
+    background-image: url('../img/Map\ Image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.forms_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 307px;
+    margin-top: 78px;
+}
+
+.forms_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.users_contacts {
+    display: flex;
+    height: 210px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.forms_style {
+    width: 455px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 21px;
+    outline: 3px solid transparent;
+    outline-offset: -2px;
+}
+
+.contacts_inputs {
+    height: 55px;
+}
+
+.contacts_textarea {
+    height: 210px;
+    padding-top: 15px;
+}
+
+input[type="email"]:focus:invalid,
+input[name="user_name"]:focus:invalid,
+textarea[name="user_message"]:focus:invalid {
+    outline-color: #ff0000;
+    transition: outline-color 1s;
+}
+
+input[type="email"]:focus:valid,
+input[name="user_name"]:focus:valid,
+textarea[name="user_message"]:focus:valid {
+    outline-color: #008000;
+    transition: outline-color 0.5s;
+}
+
+.send_msg {
+    color: #ffffff;
+    background-color: #fed136;
+    width: 240px;
+    height: 65px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.send_msg:hover {
+    color: #000000;
+    cursor: pointer;
+}
