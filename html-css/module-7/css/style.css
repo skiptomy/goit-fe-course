@@ -60,6 +60,7 @@ html {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
     margin-bottom: 15px;
 }
 
@@ -73,13 +74,15 @@ html {
     font-weight: 400;
     font-style: italic;
     color: #777777;
+    margin: 0;
     margin-bottom: 60px;
 }
 
 /* services section */
 
 .services {
-    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 102px;
 } 
 
 .services_list {
@@ -93,7 +96,6 @@ html {
 
 .services_list_item {
     flex: 0 0 290px;
-    margin-bottom: 102px;
 }
 
 .services_list_item::before {
@@ -119,9 +121,12 @@ html {
 
 .services_list_item h3 {
     font-size: 18px;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .services_list_item p {
+    margin: 0;
     color: #777777;
     font-size: 14px;
     font-family: 'Roboto Slab', serif;
@@ -144,19 +149,17 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 307px;
-    margin-top: 78px;
 }
 
 .forms_inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .users_contacts {
     display: flex;
-    height: 210px;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
