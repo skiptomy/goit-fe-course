@@ -2,14 +2,151 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.bg {
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.page_nav {
+    margin-bottom: 30px;
+}
+
+.site_logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.site_authorization {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 125px;
+}
+
+.site_authorization a {
+    padding: 7px 12px;
+    border: solid transparent;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.site_authorization a:hover {
+    border: solid #fff;
+}
+
+.page_header {
     width: 100%;
     height: 540px;
+    padding-top: 20px;
+    padding-bottom: 138px;
     background-image: url('../img/bg-full.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #ffffff;
 }
 
+.site_title {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.site_description {
+    width: 221px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.btn_find {
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff4e50;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #333333;
+}
+
+.partners {
+    padding-bottom: 58px;
+    padding-top: 70px;
+}
+
+.partners_list {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.partners_list_item {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+}
+
+.img_partner_wrp {
+    width: 122px;
+    height: 122px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.partner_logo {
+    display: block;
+    width: 100%;
+    border: solid #ffffff;
+    border-radius: 50%;
+}
+
+.partner_icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.img_partner_wrp {
+    margin-bottom: 17px;
+}
+
+.partner_name {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.partner_description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #666666;
+}
+
+.btn_partners {
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid #ff4e50;
+    background-color: transparent;
+    color: #ff4e50;
+    margin: 0 auto;
+}
