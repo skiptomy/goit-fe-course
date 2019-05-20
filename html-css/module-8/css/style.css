@@ -33,7 +33,7 @@
 
 .site_authorization a {
     padding: 7px 12px;
-    border: solid transparent;
+    border: 2px solid transparent;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 700;
@@ -42,7 +42,7 @@
 }
 
 .site_authorization a:hover {
-    border: solid #fff;
+    border: 2px solid #fff;
 }
 
 .page_header {
@@ -112,24 +112,42 @@
     height: 122px;
     position: relative;
     margin: 0 auto;
+    margin-bottom: 17px;
 }
 
 .partner_logo {
     display: block;
     width: 100%;
-    border: solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 50%;
 }
 
-.partner_icon {
+.img_partner_wrp::after {
+    content: "";
+    display: block;    
+    height: 41px;
+    width: 41px;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     bottom: 0;
     right: 0;
-
 }
 
-.img_partner_wrp {
-    margin-bottom: 17px;
+.icon_tv::after {
+    background-image: url('../img/icon_tv.png');
+}
+
+.icon_glass::after {
+    background-image: url('../img/icon_glass.png');
+}
+
+.icon_cup::after {
+    background-image: url('../img/icon_cup.png');
+}
+
+.icon_telegram::after {
+    background-image: url('../img/icon_telegram.png');
 }
 
 .partner_name {
@@ -147,7 +165,7 @@
     width: 280px;
     height: 40px;
     border-radius: 20px;
-    border: solid #ff4e50;
+    border: 2px solid #ff4e50;
     background-color: transparent;
     color: #ff4e50;
     margin: 0 auto;
