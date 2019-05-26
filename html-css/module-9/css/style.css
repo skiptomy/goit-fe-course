@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    font-size: 0.87rem;
+}
+
+.link {
+    padding: 7px 12px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+.link:hover {
+    border: 2px solid #fff;
+    text-decoration: none;
+}
+
+.logo-link {
+    font-size: 1.25rem;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+}
+
+.page-header {
+    height: 540px;
+    padding-top: 20px;
+    background-image: url('../img/bg-full.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.authorization-wrp {
+    margin-bottom: 110px;
+}
+
+.header-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.87rem;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+}
+
+.img-wrp {
+    position: relative;
+}
+
+.img-wrp::after {
+    content: "";
+    display: block;    
+    height: 41px;
+    width: 41px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icon-tv::after {
+    background-image: url('../img/icon_tv.png');
+}
+
+.icon-glass::after {
+    background-image: url('../img/icon_glass.png');
+}
+
+.icon-cup::after {
+    background-image: url('../img/icon_cup.png');
+}
+
+.icon-telegram::after {
+    background-image: url('../img/icon_telegram.png');
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #666666;
+}
+
+.btn {
+    border-radius: 20px;
+}
