@@ -21,7 +21,6 @@
 }
 
 .page-header {
-    width: 1920px;
     height: 1000px;
     margin: 0 auto;
     background: url('../img/banner.png') center no-repeat;
@@ -60,6 +59,7 @@
 
 .site-navigation {
     margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,6 +105,7 @@
     font-family: 'Kaushan Script', sans-serif;
     font-size: 72px;
     color: var(--header-color);
+    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -120,7 +121,10 @@
     margin-bottom: 125px;
 }
 
-.page-header__link { 
+.page-header__link {
+    display: block;
+    width: 164px;
+    margin: 0 auto; 
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: var(--header-color);
@@ -128,7 +132,7 @@
     text-transform: uppercase;
     line-height: 1.2;
     text-decoration: none;
-    padding: 12px 30px;
+    padding: 12px 0;
     border: solid 3px var(--header-color);
 }
 
@@ -171,8 +175,8 @@
 /* features section */
 
 .features {
-    margin-top: 125px;
-    margin-bottom: 90px;
+    padding-top: 125px;
+    padding-bottom: 90px;
 }
 
 .features__list {
