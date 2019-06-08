@@ -138,6 +138,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
     margin-bottom: 45px;
 }
 
@@ -153,6 +154,7 @@
 .section__subtitle {
     font-family: 'Kaushan Script', sans-serif;
     font-size: 24px;
+    margin: 0;
     margin-bottom: 15px;
 }
 
@@ -226,6 +228,7 @@
     font-size: 14px;
     text-transform: uppercase;
     text-align: left;
+    margin: 0;
     margin-bottom: 10px;
 }
 
@@ -234,6 +237,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #999999;
+    margin: 0;
     text-align: left;
 }
 
