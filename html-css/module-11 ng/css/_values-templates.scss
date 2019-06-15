@@ -1,0 +1,10 @@
+%transition {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@mixin fonts($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}

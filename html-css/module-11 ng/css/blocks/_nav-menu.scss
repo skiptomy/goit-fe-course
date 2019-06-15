@@ -1,0 +1,22 @@
+.page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 65px;
+  margin-bottom: 165px;
+}
+
+.site-logo {
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  color: $header-color;
+  @include fonts ($montserat, 30px, 700);
+  padding: 6px;
+}

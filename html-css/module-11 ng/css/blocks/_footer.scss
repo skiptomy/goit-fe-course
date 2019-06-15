@@ -1,0 +1,57 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 63px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &__sign {
+    @include fonts ($montserat, 14px, 400);
+  }
+
+  &__author {
+    color: $gradient-color;
+    text-decoration: none;
+  }
+}
+
+.subscribe {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+input[type='submit'] {
+  width: 150px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: $main-color;
+  @include fonts ($montserat, 14px, 700);
+  @extend %transition;
+}
+
+input[type='submit']:hover {
+  background-color: $hover-color;
+  cursor: pointer;
+}
+
+input[type='email'] {
+  width: 230px;
+  border: 1px solid $bottom-color;
+  text-align: left;
+  line-height: 22px;
+  color: #cccccc;
+  @include fonts ($roboto, 15px, 300);
+  font-style: italic;
+  padding-left: 10px;
+}
