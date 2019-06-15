@@ -19,6 +19,14 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const server = require('browser-sync').create();
 
+var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 function html() {
   return src('src/*.html')
     .pipe(rigger())
