@@ -1,0 +1,69 @@
+.team {
+  margin: 0 auto;
+  padding-bottom: 80px;
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item--wrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    widows: 380px;
+    height: 470px;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    @extend %transition;
+
+    &:hover {
+      -webkit-transform: translate(-10px, -10px);
+      transform: translate(-10px, -10px);
+      -webkit-box-shadow: 10px 10px $main-color;
+      box-shadow: 10px 10px $main-color;
+    }
+
+    &:hover .socials {
+      z-index: 2;
+    }
+
+    &:hover .team__overlay {
+      z-index: 1;
+    }
+  }
+
+  .team__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from($gradient-color), to($hover-color));
+    background: linear-gradient($gradient-color 0%, $hover-color 100%);
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    @include fonts ($montserat, 14px, 400);
+    text-transform: uppercase;
+  }
+
+  &__occupation {
+    color: $section-font-color;
+    @include fonts ($roboto, 15px, 300);
+    font-style: italic;
+  }
+}
